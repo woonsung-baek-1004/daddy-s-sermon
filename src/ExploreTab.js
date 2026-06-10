@@ -47,7 +47,7 @@ function AISermonCard({ sermon, onClose }) {
           fontSize: 10, fontWeight: 700, color: C.gold,
           background: C.goldBg, padding: "3px 10px", borderRadius: 99,
           letterSpacing: 1,
-        }}>✦ AI 생성 설교</div>
+        }}>✦ AI 말씀 해설</div>
         <button onClick={onClose} style={{
           background: C.surface, border: `1px solid ${C.border}`,
           borderRadius: 99, padding: "4px 12px",
@@ -162,7 +162,7 @@ export default function ExploreTab({ liveSermons, onOpenSermon }) {
               borderRadius: 16, padding: "24px", textAlign: "center", marginBottom: 16,
             }}>
               <div style={{ fontSize: 28, marginBottom: 10 }}>✦</div>
-              <div style={{ fontSize: 14, color: C.gold, fontWeight: 700, marginBottom: 4 }}>AI가 설교를 작성 중이에요</div>
+              <div style={{ fontSize: 14, color: C.gold, fontWeight: 700, marginBottom: 4 }}>AI가 말씀을 해설하는 중이에요</div>
               <div style={{ fontSize: 12, color: C.textDim }}>"{selectedTopic?.label}" 주제로 말씀을 찾고 있어요...</div>
             </div>
           )}
@@ -175,7 +175,7 @@ export default function ExploreTab({ liveSermons, onOpenSermon }) {
           {!aiSermon && (
             <>
               <div style={{ fontSize: 11, fontWeight: 700, color: C.textDim, letterSpacing: 1.5, marginBottom: 12 }}>
-                자녀를 위한 주제 — 탭하면 AI가 설교를 만들어요
+                자녀를 위한 주제 — 탭하면 AI가 말씀을 해설해드려요
               </div>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 24 }}>
                 {CHILD_TOPICS.map((s, i) => (
@@ -194,7 +194,7 @@ export default function ExploreTab({ liveSermons, onOpenSermon }) {
                       fontSize: 10, fontWeight: 700, color: s.color,
                       background: s.bg, padding: "2px 8px", borderRadius: 99,
                       display: "inline-block", border: `1px solid ${s.color}25`,
-                    }}>AI 설교 생성 →</div>
+                    }}>말씀 해설 보기 →</div>
                   </div>
                 ))}
               </div>

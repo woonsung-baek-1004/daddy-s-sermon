@@ -46,7 +46,7 @@ exports.handler = async (event) => {
         max_tokens: 1000,
         messages: [{
           role: "user",
-          content: `당신은 아빠가 자녀에게 전하는 따뜻한 신앙 설교를 쓰는 전문가입니다.
+          content: `당신은 청소년을 위한 성경 말씀 해설 전문가입니다.
 
 주제: "${topic.label}" (${topic.sub || topic.label})
 
@@ -54,8 +54,8 @@ exports.handler = async (event) => {
 {
   "verse": "성경 구절 (예: 잠언 3:5-6)",
   "verseText": "구절 내용 전체",
-  "title": "설교 제목 (자녀 마음에 와닿는 제목)",
-  "content": "설교 내용 (400-500자, 아빠가 자녀에게 직접 말하는 따뜻하고 솔직한 어투)"
+  "title": "말씀 제목 (이 주제에 딱 맞는 핵심 제목)",
+  "content": "말씀 해설 (500자 내외. 1) 이 말씀의 핵심 의미 2) 원어적 통찰 또는 배경 3) 오늘날 청소년의 삶에 적용. 설교조가 아닌 친근하고 명확한 문체로)"
 }`
         }]
       }),

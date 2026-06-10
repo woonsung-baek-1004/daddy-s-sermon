@@ -6,7 +6,6 @@
 [build.environment]
   CI = "false"
   DISABLE_ESLINT_PLUGIN = "true"
-  SECRETS_SCAN_ENABLED = "false"
 
 [[redirects]]
   from = "/*"
