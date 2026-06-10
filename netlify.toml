@@ -3,6 +3,10 @@
   publish = "build"
   functions = "netlify/functions"
 
+[build.environment]
+  CI = "false"
+  DISABLE_ESLINT_PLUGIN = "true"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
