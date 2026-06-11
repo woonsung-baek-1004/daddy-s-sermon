@@ -1,6 +1,6 @@
 // src/ExploreTab.js — 탐색 탭 (샘플 말씀 데이터 + 아빠설교 검색)
 import { useState } from "react";
-import { SERMON_DATA } from "./SermonData";
+import { SERMON_DATA } from "./sermonData";
 
 const C = {
   bg: "#faf7f2", card: "#ffffff", surface: "#f3ede4", cardAlt: "#fdf9f4",
